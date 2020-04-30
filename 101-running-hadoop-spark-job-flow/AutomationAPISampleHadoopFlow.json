@@ -4,16 +4,18 @@
         "SubApplication": "SampleSubApp",
         "Host" : "<HOST>",
 
-        "When" : {
-            "FromTime":"0300",
-            "ToTime":"2100"
-        },
+        "Job": {
+		        "When" : {
+		            "FromTime":"0300",
+		            "ToTime":"2100"
+		        }
+				},
         "Job:Hadoop" : {
-            "ConnectionProfile": "SampleConnectionProfile"
+            "ConnectionProfile": "SAMPLE_CP"
         }
     },
 
-    "SampleConnectionProfile" :
+    "SAMPLE_CP" :
     {
         "Type" : "ConnectionProfile:Hadoop",
         "TargetAgent" : "<HOST>"
